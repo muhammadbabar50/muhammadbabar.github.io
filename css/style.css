@@ -60,7 +60,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Preloader Css Start -------*/
 #preloader {
-	background-color: #ffffff;
+	background-color: #fbfcf8;
 	bottom: 0;
 	left: 0;
 	position: fixed;
