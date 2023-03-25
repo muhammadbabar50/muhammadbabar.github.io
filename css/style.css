@@ -69,6 +69,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	z-index: 2147483647;
 	width: 100%;
 	height: 100%;
+	background-size: cover;
 }
 #status {
     background-position: center center;
