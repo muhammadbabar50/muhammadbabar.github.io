@@ -1089,14 +1089,14 @@ input:focus, textarea:focus, select:focus, button:focus {
 	text-align:center;
 }
 #circles-1{
-	background-image:url(../images/content/progress_1.png);
+	background-image:url(../images/content/progres_1.png);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #circles-2{
-	background-image:url(../images/content/progress_2.png);
+	background-image:url(../images/content/progres_2.png);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
