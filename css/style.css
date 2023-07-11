@@ -1089,7 +1089,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	text-align:center;
 }
 .dropdown-menu{
-    transform: translate3d(60px, -180px, 3px);
+    transform: translate3d(60px, -180px, 3px)!important;
 }
 .dropup .dropdown-toggle::after{
     display: none;
