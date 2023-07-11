@@ -506,7 +506,7 @@
 					<div id="canvas">
 						<div class="row">
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
-								<div class="circle" id="circles-1"></div>
+								<div class="circle ms-5" id="circles-1"></div>
 								<h5>Artificial Intelligence</h5>
 							</div>
 							<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 text-center">
@@ -525,44 +525,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="prt_client_slider_wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="prt_heading_wrapper">
-								<div class="prt_heading">
-									<h1>Clients</h1>
-									<p>Worked With</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="prt_client_slider">
-								<div class="owl-carousel owl-theme">
-									<div class="item">
-										<a href=""><img src="https://dummyimage.com/170x86" alt="Client"></a>
-									</div>
-									<div class="item">
-										<a href=""><img src="https://dummyimage.com/170x86" alt="Client"></a>
-									</div>
-									<div class="item">
-										<a href=""><img src="https://dummyimage.com/170x86" alt="Client"></a>
-									</div>
-									<div class="item">
-										<a href=""><img src="https://dummyimage.com/170x86" alt="Client"></a>
-									</div>
-									<div class="item">
-										<a href=""><img src="https://dummyimage.com/170x86" alt="Client"></a>
-									</div>
-									<div class="item">
-										<a href=""><img src="https://dummyimage.com/170x86" alt="Client"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 			<div class="prt_footer_wrapper  ">
 				<div class="container">
 					<div class="row">
@@ -670,17 +632,13 @@
 		"Artificial Intelligence": [],
 		"Python": ["Django", "FASTAPI"],
 		"HTML & CSS": [],
-		"JavaScript": []
+		"JavaScript": ["Node.js", "React.js", "TypeScript"]
 		};
-		// Function to display the popup with subclasses
 		function displaySubclasses(skill) {
-		  // Retrieve the subclasses for the selected skill
 		  const subclasses = skillSubclasses[skill];
 	  
-		  // Generate the HTML content for the popup
 		  const popupContent = subclasses.map(subclass => `<li>${subclass}</li>`).join("");
 	  
-		  // Create a popup element
 		  const popup = document.createElement("div");
 		  popup.classList.add("popup");
 		  popup.innerHTML = `
@@ -688,16 +646,13 @@
 			<ul>${popupContent}</ul>
 		  `;
 	  
-		  // Append the popup to the body
 		  document.body.appendChild(popup);
 	  
-		  // Close the popup when clicked outside
 		  popup.addEventListener("click", () => {
 			document.body.removeChild(popup);
 		  });
 		}
 	  
-		// Add click event listeners to each skill
 		const skills = document.querySelectorAll(".circle");
 		skills.forEach(skill => {
 		  skill.addEventListener("click", () => {
@@ -706,7 +661,7 @@
 		  });
 		});
 	  </script>
-	  
+
 	<!--Main js file End-->
 </body>
 
