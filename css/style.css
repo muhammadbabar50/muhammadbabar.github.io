@@ -1092,7 +1092,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     padding-left: 15%;
 }
 .dropdown-toggle::after{
-    display: none
+    display: none;
 }
 #circles-1{
 	background-image:url(../images/content/progres_1.png);
