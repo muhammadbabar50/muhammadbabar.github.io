@@ -1088,6 +1088,12 @@ input:focus, textarea:focus, select:focus, button:focus {
 	font-size:18px;
 	text-align:center;
 }
+.dropdown-toggle{
+    padding-left: 5px;
+}
+.dropdown-toggle show{
+    display: none
+}
 #circles-1{
 	background-image:url(../images/content/progres_1.png);
 	border-radius: 100%;
