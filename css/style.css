@@ -217,11 +217,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     position: absolute;
     top: 27%;
     font-size: 150px;
-    color: #ffffff;
     font-weight: bold;
-    background: url(../images/content/banner_text_bg.jpg) no-repeat;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: lightgray;
     background-size: cover;
     background-position: 70px -345px;
     z-index: 1;
@@ -307,6 +305,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     -webkit-mask-position: -50%;
   }
 }
+.item{
+    float: right;
+    margin-right: 20 px;
+}
 .prt_menu_wrapper a.prt_top{
 	top:45px;
 	left:0px;
@@ -333,7 +335,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- About css Start -------*/
 .prt_about_wrapper{
-    background-color: #010101;
+    background: url("../images/content/background.jpg");
     position: absolute;
     width: 100%;
 	top:-100%;
@@ -490,7 +492,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_about_learnbox_year h1{
 	font-size:60px;
 	margin:0px;
-	color:#202020;
+	color: dimgray;
     font-weight: 500;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -666,7 +668,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_profile_slider{
     display: inline-block;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 15px;
 	text-align:center;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -719,7 +721,6 @@ input:focus, textarea:focus, select:focus, button:focus {
 	width:100%;
 	margin-bottom:0px;
     color: #fffefe;
-    margin-top: 20px;
 	text-transform:capitalize;
 }
 .prt_profile_details{
@@ -731,7 +732,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Contact Page css Start -------*/
 .prt_contact_wrapper {
-    background-color: #010101;
+    background: url("../images/content/background.jpg") no-repeat;
     position: absolute;
     left: 100%;
     width: 100%;
@@ -1090,37 +1091,21 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .dropdown-menu{
     transform: translate3d(60px, -180px, 3px)!important;
-}
+    background-color: #ED3E44;
+    transition: opacity 0.5s ease; 
+}  
+.dropdown-item {
+    cursor: pointer;
+    padding: 0.25em;
+    text-align: center;
+    color: #fff;
+}    
+.dropdown-item:hover {
+    background-color: #ED3E44;
+    filter: brightness(85%);
+ }
 .dropup .dropdown-toggle::after{
     display: none;
-}
-#circles-1{
-	background-image:url(../images/content/progres_1.png);
-	border-radius: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#circles-2{
-	background-image:url(../images/content/progres_2.png);
-	border-radius: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#circles-3{
-	background-image:url(../images/content/progress_3.png);
-	border-radius: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#circles-4{
-	background-image:url(../images/content/progress_4.png);
-	border-radius: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .circles-decimals {
 	font-size: .4em;
@@ -1175,7 +1160,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Portfolio css Start -------*/
 .prt_portfolio_wrapper {
-    background-color: #010101;
+    background: url("../images/content/background.jpg") no-repeat;
     position: absolute;
     right: 100%;
     width: 100%;
