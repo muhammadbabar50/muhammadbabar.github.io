@@ -1187,7 +1187,10 @@ button.prt_btn.prt_btn_portfolio {
 }
 .prt_portfolio_img{
 	display:inline-block;
-	width:auto;
+	width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
 	text-align:center;
 	position:relative;
 	overflow:hidden;
@@ -1197,7 +1200,7 @@ button.prt_btn.prt_btn_portfolio {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-}
+} 
 .prt_portfolio_img:after{
 	content:"";
 	position:absolute;
@@ -1255,33 +1258,102 @@ button.prt_btn.prt_btn_portfolio {
 }
 .prt_portfolio_text{
 	position:absolute;
-	bottom:-111px;
+	bottom:100px;
+	top:0.05px;
 	left:0px;
 	width:100%;
-	text-align:left;
-	padding:30px;
+	text-align:center;
+	padding:10px;
     z-index: 1;
+	opacity:0;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+.prt_portfolio_text:hover{
+	opacity:1;
+	/* background-color: rgb(213, 210, 210); */
+	background-color: #f6483b;
+}
 .prt_portfolio_text h4{
+	font-weight:800;
 	font-size:18px;
 	text-transform:uppercase;
 	color:#000000;
-	margin-top:0px;
+	margin-top:50px;
+}
+.prt_portfolio_text h4:hover{
+	color: white;
 }
 .prt_portfolio_text p{
 	margin:0px;
 	text-transform:capitalize;
 	color:#000000;
 }
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 80px;
+}
+@media(max-width: 750px) {
+    .portfolio_grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media(min-width: 751px) and (max-width: 999px) {
+	.portfolio_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+@media(min-width: 751px) and (max-width: 999px) {
+	.portfolio_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+.portfolio-icons {
+	justify-content: center;
+	margin-left: 0px;
+	margin-bottom: 50px;
+	margin-top:30px;
+	
+}
+.icon_image {
+    font-size: 2rem !important;
+    color: #010101;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+    transition: all 0.4s ease-in-out;
+}
+.icon_image:hover{
+    color: white;
+}
+
+/* .portfolio-icons2 {
+	margin-right:100px;
+	margin-left:0px;
+	gap:50px;
+	
+} */
+
+/* portfolio_item {
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+} */
+
 /*---------- Footer css Start -------*/
 .prt_footer_wrapper {
     background-color: #0a0a0a;
     padding: 30px 0px;
+    margin-left:-30px;
+    margin-right: -30px;
 }
 .prt_footer_wrapper p{
     display: inline-block;
