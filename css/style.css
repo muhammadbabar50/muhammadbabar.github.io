@@ -1333,6 +1333,9 @@ button.prt_btn.prt_btn_portfolio {
 .icon_image:hover{
     color: white;
 }
+.level-4-wrapper{
+    list-style-type: disc;
+}
 
 /* .portfolio-icons2 {
 	margin-right:100px;
